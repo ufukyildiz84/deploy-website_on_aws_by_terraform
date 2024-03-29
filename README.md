@@ -76,7 +76,7 @@ terraform destroy
 
 ## Support
 
-For any issues or questions, please open an issue in the repository or contact [ufukyildiz84@hotmail.com](mailto:ufukyildiz84@hotmail.com).
+For any issues or questions, please open an issue in the repository or contact [ufukyildiz84@hotmail.com](mailto:ufukyildiz84@hotmail.com)
 
 ---
 
