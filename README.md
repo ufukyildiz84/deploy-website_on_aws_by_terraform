@@ -25,7 +25,7 @@ The project consists of several Terraform configuration files:
 1. Clone this repository to your local machine:
 
     ```bash
-    git clone <repository_url>
+    git clone git@github.com:ufukyildiz84/deploy-website_on_aws_by_terraform.git
     ```
 
 2. Navigate to the project directory:
