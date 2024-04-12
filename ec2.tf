@@ -23,6 +23,6 @@ resource "aws_instance" "ec2_instance" {
   user_data                   = file("command.sh")
 
   tags = {
-    Name = "test-instance"
+    Name = "web-instance"
   }
 }
