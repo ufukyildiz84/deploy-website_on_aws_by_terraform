@@ -7,22 +7,22 @@ sudo yum update -y
 sudo yum install -y httpd
 
 # e-store site installation steps
-sudo mkdir /var/www/html/store-dir
-sudo wget -P /var/www/html/store-dir https://www.free-css.com/assets/files/free-css-templates/download/page260/e-store.zip
-sudo unzip /var/www/html/store-dir/e-store.zip -d /var/www/html/store-dir/
-sudo mv /var/www/html/store-dir/ecommerce-html-template/* /var/www/html/
-sudo systemctl restart httpd
+sudo mkdir store-dir
+cd store-dir
+sudo wget https://www.free-css.com/assets/files/free-css-templates/download/page260/e-store.zip
+sudo e-store.zip
+cd ecommerce-html-template
+mv * /var/www/html/
+cd /var/www/html/
+systemctl enable httpd
+systemctl start httpd
 
 # Install MariaDB, PHP and necessary tools
 sudo yum install -y mariadb-server
 
-# Start Apache server and enable it on system startup
-sudo systemctl start httpd
-sudo systemctl enable httpd
-
 # Start MariaDB service and enable it on system startup
-sudo systemctl start mariadb
 sudo systemctl enable mariadb
+sudo systemctl start mariadb
 
 # Set database variables
 DBName='e_store_db'
