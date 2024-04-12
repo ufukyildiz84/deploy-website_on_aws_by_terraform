@@ -20,7 +20,7 @@ resource "aws_instance" "ec2_instance" {
   vpc_security_group_ids      = [aws_security_group.webserver_security_group.id]
   subnet_id                   = aws_subnet.public_subnet_az1.id
   count                       = 1
-  user_data                   = file("userdata.tpl")
+  user_data                   = file("command.sh")
 
   tags = {
     Name = "test-instance"
