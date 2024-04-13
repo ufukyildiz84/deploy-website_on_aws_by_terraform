@@ -29,12 +29,12 @@ mysqladmin -u root password $DBRootPassword
 
 # Download and install Wordpress
 
-wget http://wordpress.org/latest.tar.gz -P /var/www/html
-cd /var/www/html
-tar -zxvf latest.tar.gz 
-cp -rvf wordpress/* . 
-rm -R wordpress 
-rm latest.tar.gz
+# wget http://wordpress.org/latest.tar.gz -P /var/www/html
+# cd /var/www/html
+# tar -zxvf latest.tar.gz 
+# cp -rvf wordpress/* . 
+# rm -R wordpress 
+# rm latest.tar.gz
 
 # Configure Wordpress
 
